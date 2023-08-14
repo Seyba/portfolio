@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
-
+body{
+  color: #000000;
+  font-size: 20px;
+}
+input{
+  color: #000000;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
