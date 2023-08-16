@@ -44,7 +44,7 @@ function App() {
   //console.log(forcast)
   return (
     <PortfolioContext.Provider value = {{forcast, visitors}}>
-      <div className="container mx-auto ">
+      <div className="">
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>

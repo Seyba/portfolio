@@ -13,9 +13,12 @@ export const WorksPage = () => {
     console.log(params)
 
     return(
-        <div>
-            <h2>Works Page</h2>
+            
+        <div className="md:mx-8">
+            {/** Larges Screens */}
+            <h2 className="md:text-center">Works Page Larger</h2>
             {projects.map(project => <WorkPage id={project.id} title={project.title}/>)}
+
         </div>
     )
 }
