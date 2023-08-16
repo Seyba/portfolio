@@ -39,6 +39,24 @@ export const AboutPage = () => {
                 
                 
             </div>
+            <div className="lg:hidden bg-white rounded-3xl my-4">
+                <div>
+                    <h3>EDUCATION</h3>
+                    <h4>2003 - 2007</h4>
+                    <h4>Bachelor Degree in Art</h4>
+
+                </div>
+                <div>
+                    <h3>2019</h3>
+                    <h4>UDEMY Javascript Bootcamp Certificate</h4>
+                </div>
+                <div>
+                    <h3>2023</h3>
+                    <h4>Per Scholas Google Sponsored Software Engineering Certificate</h4>
+                </div>
+                
+                
+            </div>
             <div className="grid grid-cols-2 gap-2 sm:hidden">
                 <div>
                     <img src="https://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png" alt="cloud"/>
