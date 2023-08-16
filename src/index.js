@@ -1,5 +1,6 @@
 import React from 'react'
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom/client"
+import { Footer } from './components/Footer'
 import "./index.css";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -12,6 +13,7 @@ root.render(
       <Router>
         <Navbar/>
         <App />
+        <Footer />
       </Router>
     </React.StrictMode>
   </div>
