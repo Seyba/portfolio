@@ -16,6 +16,8 @@ export const AboutPage = () => {
                     className="w-60"
                 />
             </div>
+
+            <h2 className="lg:hidden text-2xl font-bold">SELF SUMMARY</h2>
             <div className="lg:hidden bg-white rounded-3xl my-4">
                 <h3 className="text-4xl font-semibold">Mahamadou Tirera</h3>
                 <p>
@@ -57,15 +59,23 @@ export const AboutPage = () => {
                 
                 
             </div>
-            <div className="grid grid-cols-2 gap-2 sm:hidden">
-                <div>
-                    <img src="https://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png" alt="cloud"/>
 
+            <div className="lg:hidden bg-white rounded-3xl my-4 py-4">
+                <div className="flex justify-around bg-slate-100 mx-4 py-12 rounded-3xl">
+                    <div>Github</div>
+                    <div>LinkedIN</div>
                 </div>
-                <div>
-                    two
-                </div>
+                <h4>FIND ME THERE</h4>  
+                <h4>Profiles</h4>
             </div>
+            <div className="lg:hidden bg-white rounded-3xl my-4 py-16">
+                <h3>Let's Work together</h3>
+            </div>
+            <div className="lg:hidden bg-white rounded-3xl my-4 py-16">
+                <h3>MORE ABOUT ME</h3>
+                
+            </div>
+            
         </div>
     )
 }
