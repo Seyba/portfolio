@@ -21,6 +21,9 @@ export const AboutPage = () => {
                     <h3 className="text-4xl font-semibold">Mahamadou Tirera</h3>
                     <p>
                         I am a New York City based Full Stack Web Developer with a focus on web design, illustration, a visual development. I have a wide range of tools in my developer tool box and always using the latest in the industry.
+                        I have professional experience in customer service, in teaching and hospitality.
+                        I am proficient in JavaScript, html/CSS, React, Firebase, bootstrap, Sass and Tailwind CSS.
+                        I'm currently working on a ReactJS and Firebase web project.
                     </p>
                 </div>
             </section>
@@ -32,7 +35,7 @@ export const AboutPage = () => {
 
             <section className="md:grid grid-cols-4 gap-3 mb-4">
                 <div className="bg-slate-200  rounded-3xl mb-4">Profiles</div>
-                <div className="bg-slate-200 col-span-2 py-8 rounded-3xl mb-4">Let's work together </div>
+                <div className="bg-slate-200 col-span-2 rounded-3xl mb-4">Let's work together </div>
                 <div className="bg-slate-200  rounded-3xl mb-4">More about me </div>
             </section>
             <div className="mx-4">            
@@ -49,6 +52,10 @@ export const AboutPage = () => {
                     <h3 className="text-4xl font-semibold">Mahamadou Tirera</h3>
                     <p>
                         I am a New York City based Full Stack Web Developer with a focus on web design, illustration, a visual development. I have a wide range of tools in my developer tool box and always using the latest in the industry.
+                        I have professional experience in customer service, in teaching and hospitality.
+                        I am proficient in JavaScript, html/CSS, React, Firebase, bootstrap.
+                        I'm currently working on a ReactJS and Firebase web project.
+
                     </p>
                 </div>
 

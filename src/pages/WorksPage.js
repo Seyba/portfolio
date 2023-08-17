@@ -8,7 +8,7 @@ const projects = [
     {id: 'pdkc', title: 'Note App ', githubLink: 'www.github.com/ckddlf'},
     {id: '34dk', title: 'Redux Todo App ', githubLink: 'www.github.com/proddlf'}
 ]
-export const WorksPage = () => {
+export const WorksPage = (props) => {
     const params = useParams()
     console.log(params)
 
@@ -17,7 +17,7 @@ export const WorksPage = () => {
         <div className="md:mx-8">
             {/** Larges Screens */}
             <h2 className="md:text-center">Works Page Larger</h2>
-            {projects.map(project => <WorkPage id={project.id} title={project.title}/>)}
+            {projects.map(project => <WorkPage key={project.id} id={project.id} title={project.title}/>)}
 
         </div>
     )
