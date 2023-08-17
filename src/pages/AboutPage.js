@@ -17,7 +17,12 @@ export const AboutPage = () => {
             {/** summary section */}
             <section className="md:grid grid-cols-3 gap-3 mb-4">
                 <div className="bg-slate-200  rounded-3xl mb-4">Img section</div>
-                <div className="bg-slate-200 col-span-2 py-8 rounded-3xl mb-4">summary section </div>
+                <div className="bg-slate-200 col-span-2 py-8 rounded-3xl mb-4">
+                    <h3 className="text-4xl font-semibold">Mahamadou Tirera</h3>
+                    <p>
+                        I am a New York City based Full Stack Web Developer with a focus on web design, illustration, a visual development. I have a wide range of tools in my developer tool box and always using the latest in the industry.
+                    </p>
+                </div>
             </section>
             {/** Education and Experience section */}
             <section className="md:grid grid-cols-2 gap-3 mb-4">
