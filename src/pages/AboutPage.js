@@ -50,7 +50,7 @@ export const AboutPage = () => {
             }
         }
     }
-    const affectedAreas = getAreasAffected()
+    getAreasAffected()
     getAnouncement()
     getIntruction()
     //console.log(x)

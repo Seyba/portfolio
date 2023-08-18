@@ -1,4 +1,4 @@
-import { useParams, Link} from "react-router-dom"
+import { useParams} from "react-router-dom"
 import { WorkPage } from "./WorkPage"
 const projects = [
     {id: '9393', title: 'Todo App ', githubLink: 'www.github.com/prodfddlf'},

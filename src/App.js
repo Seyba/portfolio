@@ -9,7 +9,6 @@ import { BlogPage } from './pages/BlogPage'
 import './App.css'
 import { NotFound } from './pages/NotFound'
 import { PortfolioContext } from './context/portfolioContext'
-import { Spinner } from './components/Spinner'
 
 function App() {
   const [forcast, setForcast ] = useState([])
