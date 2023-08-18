@@ -5,8 +5,58 @@ import { Link } from "react-router-dom"
 export const AboutPage = () => {
     const ctx = useContext(PortfolioContext)
     const { forcast, visitors } = ctx
+    const ft = forcast.features
     console.log(forcast)
+
+    const getAreasAffected = () => {
+        for(const prop in ft) {
+            const newObj = ft[prop]
+            for(const i in newObj) {
+                const obj2 = newObj[i]
+                for(const j in obj2) {
+                    const obj3 = obj2[j]
+                    if(j === 'areaDesc'){
+                        return obj3
+                    }
+                }
+            }
+        }
+    }
+    const getAnouncement = () => {
+        for(const prop in ft) {
+            const newObj = ft[prop]
+            for(const i in newObj) {
+                const obj2 = newObj[i]
+                for(const j in obj2) {
+                    const obj3 = obj2[j]
+                    if(j === 'headline'){
+                        return obj3
+                    }
+                }
+            }
+        }
+    }
+    const getIntruction = () => {
+        for(const prop in ft) {
+            const newObj = ft[prop]
+            for(const i in newObj) {
+                const obj2 = newObj[i]
+                for(const j in obj2) {
+                    const obj3 = obj2[j]
+                    if(j === 'instruction'){
+                        console.log(obj3)
+                    }
+                }
+            }
+        }
+    }
+    const affectedAreas = getAreasAffected()
+    getAnouncement()
+    getIntruction()
+    //console.log(x)
+    
     console.log(visitors)
+
     return(
         <div className="py-8">
             
@@ -14,6 +64,7 @@ export const AboutPage = () => {
             <section className="md:grid grid-cols-3 gap-4 mb-4 mx-6 md:mx-32">
                 <div className="bg-white  rounded-3xl mb-4">
                     <h3>Current Weather Alert</h3>
+                    <p>{forcast.title}</p>
                 </div>
                 <div className="bg-white col-span-2 px-8 rounded-3xl mb-4">
                     <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2-2.png" alt="placeholder"/>

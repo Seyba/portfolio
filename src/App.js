@@ -9,10 +9,11 @@ import { BlogPage } from './pages/BlogPage'
 import './App.css'
 import { NotFound } from './pages/NotFound'
 import { PortfolioContext } from './context/portfolioContext'
+import { Spinner } from './components/Spinner'
 
 function App() {
-  const [forcast, setForcast ] = useState(null)
-  const [visitors, setVisitors] = useState(null)
+  const [forcast, setForcast ] = useState([])
+  const [visitors, setVisitors] = useState([])
 
   const getFakeVisitors = async () => {
     try{
@@ -40,7 +41,6 @@ function App() {
   useEffect(() => {
     getWeather()
   }, [])
-  
   //console.log(forcast)
   return (
     <PortfolioContext.Provider value = {{forcast, visitors}}>
