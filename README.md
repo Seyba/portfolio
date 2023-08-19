@@ -21,3 +21,6 @@ data fetched and shared through react context provider
 
 ## Weather Warning and Advisories
 Weather data displayed on About page and home page
+
+## local project data created
+local file "utils.js" created to load and share projects data in workpage
