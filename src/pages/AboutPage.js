@@ -1,21 +1,37 @@
 import { PortfolioContext } from "../context/portfolioContext"
 import { useContext } from "react"
 import { Link } from "react-router-dom"
+import {Spinner} from '../components/Spinner'
 
 export const AboutPage = () => {
     const ctx = useContext(PortfolioContext)
     const { forcast, visitors } = ctx
     const ft = forcast.features
 
-    console.log(forcast)
-
+    const d = forcast.features
+    console.log('data is', d)
+    
+    const getHeadline = () => {
+        for(const prop in ft) {
+            const newObj = ft[prop]
+            return newObj.properties.areaDesc
+        }
+    }
+    const weatherHeadline = getHeadline()
+    const loading = (weatherHeadline? <h2>{weatherHeadline}</h2>: <Spinner />)
     const getAreasAffected = () => {
         for(const prop in ft) {
             const newObj = ft[prop]
+            console.log(newObj.properties.headline)
+            console.log(newObj.properties.description)
+            console.log(newObj.properties.areaDesc)
+            console.log(newObj.properties.instruction)
             for(const i in newObj) {
                 const obj2 = newObj[i]
+                //console.log(obj2)
                 for(const j in obj2) {
-                    const obj3 = obj2[j]
+                    const obj3 = obj2[j]                
+
                     if(j === 'areaDesc'){
                         return obj3
                     }
@@ -64,8 +80,9 @@ export const AboutPage = () => {
             {/** summary section */}
             <section className="md:grid grid-cols-3 gap-4 mb-4 mx-6 md:mx-32">
                 <div className="bg-white  rounded-3xl mb-4">
-                    <h3>Current Weather Alert</h3>
-                    <p>{forcast.title}</p>
+                    <h3>{forcast.title}</h3>
+                    {loading}
+                    
                 </div>
                 <div className="bg-white col-span-2 px-8 rounded-3xl mb-4">
                     <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2-2.png" alt="placeholder"/>
