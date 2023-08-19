@@ -1,9 +1,32 @@
 import { Link } from "react-router-dom"
+import { PortfolioContext } from "../context/portfolioContext"
+import { useContext } from "react"
+import {Spinner} from '../components/Spinner'
 
 export const HomePage = () => {
+    const ctx = useContext(PortfolioContext)
+
+    const { forcast, visitors } = ctx
+    const ft = forcast.features
+    const getWarnings = () => {
+        for(const prop in ft) {
+            const newObj = ft[prop]
+            const { instruction, headline, areaDesc, description } = newObj.properties
+            return instruction
+        }
+    }
+    const instr = getWarnings()
     return(
         <div className="py-8">
+            <section className="md:grid grid-cols-1 gap-4 mb-4 mx-6 md:mx-32">
+                <div className="bg-white  rounded-3xl mb-4">
+                    <h3>Instruction</h3>
+                    <h4>{instr}</h4>
+                </div>
+                
+            </section>
             <section className="md:grid grid-cols-2 gap-4 mb-4 mx-6 md:mx-32">
+                
                 <div className="bg-white  rounded-3xl mb-4">
                     <h3>Current Weather Alert</h3>
                     <p>About</p>

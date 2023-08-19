@@ -7,12 +7,14 @@ import { WorksPage} from './pages/WorksPage'
 import { WorkPage } from './pages/WorkPage'
 import { BlogPage } from './pages/BlogPage'
 import './App.css'
+import { projects } from './utils/data'
 import { NotFound } from './pages/NotFound'
 import { PortfolioContext } from './context/portfolioContext'
 
 function App() {
   const [forcast, setForcast ] = useState([])
   const [visitors, setVisitors] = useState([])
+  const [projectData, setProjectData ] = useState(projects)
 
   const getFakeVisitors = async () => {
     try{
@@ -42,14 +44,14 @@ function App() {
   }, [])
   //console.log(forcast)
   return (
-    <PortfolioContext.Provider value = {{forcast, visitors}}>
+    <PortfolioContext.Provider value = {{forcast, visitors, projectData}}>
       <div className="">
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/works" element={<WorksPage/>}/>
-          <Route path="/works/:id" element={<WorkPage/>}/>
+          <Route path="/works/work/:id" element={<WorkPage/>}/>
           <Route path="/blog" element={<BlogPage/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
