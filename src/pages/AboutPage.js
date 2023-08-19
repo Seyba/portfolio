@@ -6,6 +6,7 @@ export const AboutPage = () => {
     const ctx = useContext(PortfolioContext)
     const { forcast, visitors } = ctx
     const ft = forcast.features
+
     console.log(forcast)
 
     const getAreasAffected = () => {
@@ -69,7 +70,7 @@ export const AboutPage = () => {
                 <div className="bg-white col-span-2 px-8 rounded-3xl mb-4">
                     <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2-2.png" alt="placeholder"/>
                     <h3 className="text-4xl font-semibold my-4">Mahamadou Tirera</h3>
-                    <p className="text-sm text-slate-500 font-normal pb-8 m">
+                    <p className="text-sm text-gray-400 font-medium pb-8 m">
                         I am a New York City based Full Stack Web Developer with a focus on web design, illustration, a visual development.  I have a diverse range of experience having worked across various fields and industries.
                         I have professional experience in customer service, in teaching and hospitality.
                         I am proficient in JavaScript, HTML/CSS, React, Firebase, bootstrap, Sass and Tailwind CSS.
@@ -80,39 +81,49 @@ export const AboutPage = () => {
 
             {/** Education and Experience section */}
             <section className="md:grid grid-cols-2 gap-4 mb-4 mx-6 md:mx-32">
-                <div className="bg-white  rounded-3xl mb-4">
+                <div className="bg-white  p-6 rounded-3xl mb-4">
                     
-                    <h3>EXPERIENCE</h3>
-                    <h3>2019 - Present</h3>
-                    <h3>Manager</h3>
-                    <h4>Big Dream Farm LLC</h4>
+                    <h3 className="text-lg font-medium pb-4">EXPERIENCE</h3>
+                    <div className="mb-6">
+                        <h3 className="text-gray-400 ">2019 - Present</h3>
+                        <h3 className="text-gray-950 font-semibold">Manager</h3>
+                        <h4 className="text-gray-400 font-medium text-sm">Big Dream Farm LLC</h4>
+                    </div>
 
-                    <h3>2019-2016</h3>
-                    <h3>Cook</h3>
-                    <h4>Dos Caminos</h4>
+                    <div className="mb-6">
+                        <h3 className="text-gray-400 ">2019-2016</h3>
+                        <h3 className="text-gray-950 font-semibold">Cook</h3>
+                        <h4 className="text-gray-400 font-medium text-sm">Dos Caminos</h4>
+                    </div>
                 </div>
-                <div className="bg-white rounded-3xl mb-4">
-                    <h3>EDUCATION</h3>
-                    <h3>2023</h3>
-                    <h4>Google Sponsored Software Engineer Certification</h4>
-                    <h4>Per Scholas</h4>
+                <div className="bg-white p-6 rounded-3xl mb-4">
+                    <h3 className="text-lg font-medium pb-4">EDUCATION</h3>
+                    <div className="mb-6">
+                        <h3 className="text-gray-400">2023</h3>
+                        <h4 className="text-gray-950 font-semibold">Google Sponsored Software Engineer Certification</h4>
+                        <h4 className="text-gray-400 font-medium text-sm">Per Scholas</h4>
+                    </div>
 
-                    <h3>2019</h3>
-                    <h4>Javascript | NodeJs | ReactJS Certification</h4>
-                    <h4>Udemy</h4>
+                    <div className="mb-6">
+                        <h3 className="text-gray-400">2019</h3>
+                        <h4 className="text-gray-950 font-semibold">Javascript | NodeJs | ReactJS Certification</h4>
+                        <h4 className="text-gray-400 font-medium text-sm">Udemy</h4>
+                    </div>
 
-                    <h3>2003 - 2007</h3>
-                    <h4>Bachelor Degree in Art</h4>
-                    <h4>University of Bamako</h4>
+                    <div className="mb-6">
+                        <h3 className="text-gray-400">2003 - 2007</h3>
+                        <h4 className="text-gray-950 font-semibold">Bachelor Degree in Art</h4>
+                        <h4 className="text-gray-400 font-medium text-sm">University of Bamako</h4>
+                    </div>
 
                 </div>
             </section>
 
             {/** Contact info & more about me redirect */}
             <section className="md:grid grid-cols-4 gap-4 mb-4 mx-6 md:mx-32">
-                <div className="bg-white  rounded-3xl mb-4">
-                    <div className="bg-gray-100 flex justify-center m-8 sm:mt-4 p-6 rounded-3xl">
-                        <div className="bg-white rounded-full p-8 mr-2">
+                <div className="bg-white  py-1 rounded-3xl mb-4">
+                    <div className="bg-gray-50 flex justify-center m-8 p-4 rounded-3xl">
+                        <div className="bg-white rounded-full p-6 mr-2">
                             <Link to="https://github.com/Seyba">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +136,7 @@ export const AboutPage = () => {
                                 </svg>
                             </Link>
                         </div>
-                        <div className="bg-white rounded-full p-8 ml-2">
+                        <div className="bg-white rounded-full p-6 ml-2">
                             <Link to="https://www.linkedin.com/in/mahamadou-tirera-950939aa/">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -139,85 +150,57 @@ export const AboutPage = () => {
                             </Link>
                         </div>
                     </div>
-                    <h3>StAY WITH ME</h3>
-                    <h3>Profiles</h3>
+                    <div className="flex justify-between items-center px-6">
+                        <div>
+                            <h5 className="text-sm font-semibold text-gray-300">FOLLOW ME</h5>
+                            <h5 className="py-2 text-md font-semibold">Profiles</h5>
+                        </div>
+                        <div >
+                            <Link to="/contact">
+                                <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon-2.svg" alt="svg"/>
+                            </Link>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div className="bg-white col-span-2 rounded-3xl mb-4">Let's work together </div>
-                <div className="bg-white  rounded-2xl mb-4">More about me </div>
+                <div className="bg-white col-span-2 rounded-3xl mb-4 px-6 pb-6">
+                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2-2.png" alt="placeholder"/>
+                    <div className="flex justify-between items-end pt-6">
+                        <Link to="/contact">
+                            <div>
+                                <h5 className="text-5xl font-medium">Let's</h5>
+                                <h5 className="text-5xl font-medium">work <span className="text-gray-300">together.</span></h5>
+                            </div>
+                        </Link>
+                        <div>
+                            <Link to="/contact">
+                                <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon-2.svg" alt="svg"/>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-white  rounded-3xl mb-4 px-6">
+                    <div className="flex justify-end">
+                        <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2-2.png" alt="placeholder"/>
+                    </div>
+                    <div className="flex justify-between mt-20 items-end">
+                        <Link to="/contact">
+                            <div>
+                                <h5 className="text-sm font-semibold text-gray-300">MORE ABOUT ME</h5>
+                                <h5 className="text-md font-semibold">Credentials</h5>
+                            </div>
+                        </Link>
+
+                        <div>
+                            <Link to="/contact">
+                                <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon-2.svg" alt="svg"/>
+                            </Link>
+                        </div>
+
+                    </div>
+                </div>
             </section>
-
-
-
-
-
-            <div className="mx-4">            
-                <div className="w-1/2 bg-white  rounded-xl md:hidden lg:hidden">
-                    <h3>image</h3>
-                </div>
-
-                <h2 className="lg:hidden text-2xl font-bold">SELF SUMMARY</h2>
-                <div className="lg:hidden bg-white rounded-2xl my-4">
-                    <h3 className="text-2xl font-semibold">Mahamadou Tirera</h3>
-                    <p>
-                        I am a New York City based Full Stack Web Developer with a focus on web design, illustration, a visual development. I have a wide range of tools in my developer tool box and always using the latest in the industry.
-                        I have professional experience in customer service, in teaching and hospitality.
-                        I am proficient in JavaScript, HTML/CSS, React, Firebase, bootstrap.
-                        I'm currently working on a ReactJS and Firebase web project.
-
-                    </p>
-                </div>
-
-                <div className="lg:hidden bg-white rounded-3xl my-4">
-                    <div>
-                        <h3>EXPERIENCE</h3>
-                        <h4>2020 - 2023</h4>
-                        <h4>Manager</h4>
-
-                    </div>
-                    <div>
-                        <h3>EXPERIENCE</h3>
-                        <h4>2022 - 2023</h4>
-                        <h4>Manager</h4>
-
-                    </div>
-                    
-                    
-                </div>
-                <div className="lg:hidden bg-white rounded-3xl my-4">
-                    <div>
-                        <h3>EDUCATION</h3>
-                        <h4>2003 - 2007</h4>
-                        <h4>Bachelor Degree in Art</h4>
-
-                    </div>
-                    <div>
-                        <h3>2019</h3>
-                        <h4>UDEMY Javascript Bootcamp Certificate</h4>
-                    </div>
-                    <div>
-                        <h3>2023</h3>
-                        <h4>Per Scholas Google Sponsored Software Engineering Certificate</h4>
-                    </div>
-                    
-                    
-                </div>
-
-                <div className="lg:hidden bg-white rounded-3xl my-4 py-4">
-                    <div className="flex justify-around bg-slate-100 mx-4 py-12 rounded-3xl">
-                        <div>Github</div>
-                        <div>LinkedIN</div>
-                    </div>
-                    <h4>FIND ME THERE</h4>  
-                    <h4>Profiles</h4>
-                </div>
-                <div className="lg:hidden bg-white rounded-3xl my-4 py-16">
-                    <h3>Let's Work together</h3>
-                </div>
-                <div className="lg:hidden bg-white rounded-3xl my-4 py-16">
-                    <h3>MORE ABOUT ME</h3>
-                    
-                </div>
-            </div>
+            
         </div>
     )
 }
