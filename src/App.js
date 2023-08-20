@@ -14,7 +14,7 @@ import { PortfolioContext } from './context/portfolioContext'
 function App() {
   const [forcast, setForcast ] = useState([])
   const [visitors, setVisitors] = useState([])
-  const [projectData, setProjectData ] = useState(projects)
+  //const [projectData, setProjectData ] = useState([])
 
   const getFakeVisitors = async () => {
     try{
@@ -30,7 +30,7 @@ function App() {
     try{
       const res = await fetch('https://api.weather.gov/alerts/active?area=VA') 
       const data = await res.json()
-      setProjectData(projectData)
+      //setProjectData(projectData)
       setForcast(data)
     }catch(e) {
       console.log(e)
@@ -43,6 +43,8 @@ function App() {
   useEffect(() => {
     getWeather()
   }, [])
+  
+  const projectData = projects
   //console.log(forcast)
   return (
     <PortfolioContext.Provider value = {{forcast, visitors, projectData}}>
