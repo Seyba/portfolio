@@ -1,7 +1,7 @@
 import { PortfolioContext } from "../context/portfolioContext"
 import { useContext } from "react"
 import { Link } from "react-router-dom"
-import {Spinner} from '../components/Spinner'
+//import {Spinner} from '../components/Spinner'
 import prof from '../images/prof.jpg'
 
 export const AboutPage = () => {
@@ -9,18 +9,18 @@ export const AboutPage = () => {
     const { forcast } = ctx
     const ft = forcast.features
     console.log(forcast)
-    const getLocalWarnings = () => {
-        for(const prop in ft) {
-            const newObj = ft[prop]
-            const { description } = newObj.properties
-            // const formattedDesc = description.split('*')
-            // const formattedAreas = areaDesc.split(';')
-            //const warningMsg = `Instruction: ${instruction}, Advisory: ${headline}, Details: ${formattedDesc}, Locations: ${formattedAreas}`
+    // const getLocalWarnings = () => {
+    //     for(const prop in ft) {
+    //         const newObj = ft[prop]
+    //         const { description } = newObj.properties
+    //         // const formattedDesc = description.split('*')
+    //         // const formattedAreas = areaDesc.split(';')
+    //         //const warningMsg = `Instruction: ${instruction}, Advisory: ${headline}, Details: ${formattedDesc}, Locations: ${formattedAreas}`
             
             
-            return description
-        }
-    }
+    //         return description
+    //     }
+    // }
     //const weatherWarning = getLocalWarnings()
     //const localWarningData = (weatherWarning? <h2>{weatherWarning}</h2>: <Spinner />)
     const getAreasAffected = () => {
