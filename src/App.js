@@ -28,7 +28,7 @@ function App() {
   }
   const getWeather = async () => {
     try{
-      const res = await fetch('https://api.weather.gov/alerts/active?area=OH') 
+      const res = await fetch('https://api.weather.gov/alerts/active?area=NY') 
       const data = await res.json()
       setForcast(data)
     }catch(e) {
