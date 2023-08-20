@@ -7,13 +7,13 @@ export const AboutPage = () => {
     const ctx = useContext(PortfolioContext)
     const { forcast, visitors } = ctx
     const ft = forcast.features
-    
+    console.log(forcast)
     const getLocalWarnings = () => {
         for(const prop in ft) {
             const newObj = ft[prop]
             const { instruction, headline, areaDesc, description } = newObj.properties
-            const formattedDesc = description.split('*')
-            const formattedAreas = areaDesc.split(';')
+            // const formattedDesc = description.split('*')
+            // const formattedAreas = areaDesc.split(';')
             //const warningMsg = `Instruction: ${instruction}, Advisory: ${headline}, Details: ${formattedDesc}, Locations: ${formattedAreas}`
             
             
