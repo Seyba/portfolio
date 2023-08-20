@@ -24,3 +24,5 @@ Weather data displayed on About page and home page
 
 ## local project data created
 local file "utils.js" created to load and share projects data in workpage
+## Two projects diployed
+Netlify deployed apps links shared in the project sections
