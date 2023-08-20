@@ -2,6 +2,7 @@ import { PortfolioContext } from "../context/portfolioContext"
 import { useContext } from "react"
 import { Link } from "react-router-dom"
 import {Spinner} from '../components/Spinner'
+import prof from '../images/prof.jpg'
 
 export const AboutPage = () => {
     const ctx = useContext(PortfolioContext)
@@ -81,7 +82,9 @@ export const AboutPage = () => {
     return(
         <div className="py-8">
             <section className="md:grid grid-cols-1 gap-4 mb-4 mx-6 md:mx-32">
+                
                 <div className="bg-white  rounded-3xl mb-4">
+                    
                     <h3>Instruction</h3>
                     <h4>{instr}</h4>
                 </div>
@@ -92,25 +95,11 @@ export const AboutPage = () => {
                 <div className="bg-white  rounded-3xl mb-4">
                     {/* <h3>{forcast.title}</h3>
                     {localWarningData} */}
-                    {
-                        warnInstr? (
-                            <div className="">
-                                <h2 className="text-3xl font-medium text-center">Instruction</h2>
-                                <div className="flex justify-center py-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
-                                    </svg>
-                                </div>
-                                
 
-                                <h3 className="text-2xl font-normal px-6 py-3 leading-tight">{warnInstr}</h3>
-                            </div>
-                            ) : (
-                            <div className="py-32 px-44 sm:px-48">
-                                <Spinner/>
-                            </div>
-                        )
-                    }
+                    <div className="flex justify-center">
+                        <img src={prof} alt="profile" className="h-50 w-40 mt-6 rounded-lg"/>
+                    </div>
+                    
                     
                     
                     

@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom"
 import { PortfolioContext } from "../context/portfolioContext"
 import { useContext } from "react"
-import {Spinner} from '../components/Spinner'
+
 
 export const HomePage = () => {
     const ctx = useContext(PortfolioContext)
 
-    const { forcast, visitors } = ctx
+    const { forcast } = ctx
     const ft = forcast.features
     const getWarnings = () => {
         for(const prop in ft) {
             const newObj = ft[prop]
-            const { instruction, headline, areaDesc, description } = newObj.properties
+            const { instruction} = newObj.properties
             return instruction
         }
     }
