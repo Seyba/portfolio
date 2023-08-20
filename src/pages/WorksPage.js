@@ -3,7 +3,6 @@ import { WorkPage } from "./WorkPage"
 import { WorkItem } from "../components/WorkItem"
 import { useContext} from 'react'
 import { PortfolioContext } from "../context/portfolioContext"
-
 export const WorksPage = (props) => {
     const ctx = useContext(PortfolioContext)
     const {projectData} = ctx
@@ -29,10 +28,6 @@ export const WorksPage = (props) => {
                     </p>
                 </div>
             </section>
-
-            {/** Larges Screens */}
-            <h2 className="md:text-center">Works Page Larger</h2>
-
         </div>
     )
 }
