@@ -30,6 +30,7 @@ function App() {
     try{
       const res = await fetch('https://api.weather.gov/alerts/active?area=VA') 
       const data = await res.json()
+      setProjectData(projectData)
       setForcast(data)
     }catch(e) {
       console.log(e)

@@ -6,13 +6,13 @@ import prof from '../images/prof.jpg'
 
 export const AboutPage = () => {
     const ctx = useContext(PortfolioContext)
-    const { forcast, visitors } = ctx
+    const { forcast } = ctx
     const ft = forcast.features
     console.log(forcast)
     const getLocalWarnings = () => {
         for(const prop in ft) {
             const newObj = ft[prop]
-            const { instruction, headline, areaDesc, description } = newObj.properties
+            const { description } = newObj.properties
             // const formattedDesc = description.split('*')
             // const formattedAreas = areaDesc.split(';')
             //const warningMsg = `Instruction: ${instruction}, Advisory: ${headline}, Details: ${formattedDesc}, Locations: ${formattedAreas}`
@@ -21,8 +21,8 @@ export const AboutPage = () => {
             return description
         }
     }
-    const weatherWarning = getLocalWarnings()
-    const localWarningData = (weatherWarning? <h2>{weatherWarning}</h2>: <Spinner />)
+    //const weatherWarning = getLocalWarnings()
+    //const localWarningData = (weatherWarning? <h2>{weatherWarning}</h2>: <Spinner />)
     const getAreasAffected = () => {
         for(const prop in ft) {
             const newObj = ft[prop]
@@ -78,7 +78,7 @@ export const AboutPage = () => {
     getIntruction()
     const instr = getIntruction()
     //console.log(visitors)
-    const warnInstr = getIntruction()
+    //const warnInstr = getIntruction()
     return(
         <div className="py-8">
             <section className="md:grid grid-cols-1 gap-4 mb-4 mx-6 md:mx-32">
