@@ -76,7 +76,7 @@ export const AboutPage = () => {
     getAreasAffected()
     getAnouncement()
     getIntruction()
-    const instr = getIntruction()
+    //const instr = getIntruction()
     //console.log(visitors)
     //const warnInstr = getIntruction()
     return(
