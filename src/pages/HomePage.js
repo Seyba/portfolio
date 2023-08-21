@@ -27,7 +27,7 @@ export const HomePage = () => {
     const warningDesc = getDescription()
     return(
         <div className="py-8">
-            <section className="md:grid grid-cols-1 gap-4 mb-4 mx-6 md:mx-32">
+            <section className="md:grid grid-cols-1 gap-4 mb-4 mx-6 md:mx-32 animate-fade-down animate-once animate-duration-1000 animate-ease-linear">
                 <div className="bg-white  rounded-3xl mb-4">
                     
                     {
@@ -54,11 +54,11 @@ export const HomePage = () => {
             </section>
             <section className="md:grid grid-cols-2 gap-4 mb-4 mx-6 md:mx-32">
                 
-                <div className="bg-white  rounded-3xl mb-4">
+                <div className="bg-white  rounded-3xl mb-4 animate-fade-right animate-once animate-duration-1000 animate-ease-linear">
                     <h3 className="text-center text-2xl font-semibold">Current Weather Alert</h3>
                     <h3 className="text-gray-400 text-sm font-semibold pt-16 pb-4 px-8">{warningDesc}</h3>
                 </div>
-                <div className="bg-white px-8 rounded-3xl mb-4">
+                <div className="bg-white px-8 rounded-3xl mb-4 animate-fade-left animate-once animate-duration-1000 animate-ease-linear">
                     <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2-2.png" alt="placeholder"/>
                     <h3 className="text-4xl font-semibold my-4">Mahamadou Tirera</h3>
                     <p className="text-sm text-gray-400 font-medium pb-8 m">
@@ -69,7 +69,7 @@ export const HomePage = () => {
                     </p>
                 </div>
             </section>
-            <section className="md:grid grid-cols-4 gap-4 mb-4 mx-6 md:mx-32">
+            <section className="md:grid grid-cols-4 gap-4 mb-4 mx-6 md:mx-32 animate-fade-up animate-once animate-duration-1000 animate-ease-linear">
                 <div className="bg-white  py-1 rounded-3xl mb-4">
                     <div className="bg-gray-50 flex justify-center m-8 p-4 rounded-3xl">
                         <div className="bg-white rounded-full p-6 mr-2">
@@ -99,7 +99,7 @@ export const HomePage = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="flex justify-between items-center px-6">
+                    <div className="flex justify-between items-center px-6 ">
                         <div>
                             <h5 className="text-sm font-semibold text-gray-300">FOLLOW ME</h5>
                             <h5 className="py-2 text-md font-semibold">Profiles</h5>

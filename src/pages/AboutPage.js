@@ -81,7 +81,7 @@ export const AboutPage = () => {
     //const warnInstr = getIntruction()
     return(
         <div className="py-8">
-            <section className="md:grid grid-cols-1 gap-4 mb-4 mx-6 md:mx-32">
+            {/* <section className="md:grid grid-cols-1 gap-4 mb-4 mx-6 md:mx-32 ">
                 
                 <div className="bg-white  rounded-3xl mb-4">
                     
@@ -89,9 +89,9 @@ export const AboutPage = () => {
                     <h4>{instr}</h4>
                 </div>
                 
-            </section>
+            </section> */}
             {/** summary section */}
-            <section className="md:grid grid-cols-3 gap-4 mb-4 mx-6 md:mx-32">
+            <section className="md:grid grid-cols-3 gap-4 mb-4 mx-6 md:mx-32 animate-fade-down animate-once animate-duration-1000 animate-ease-linear">
                 <div className="bg-white  rounded-3xl mb-4">
                     {/* <h3>{forcast.title}</h3>
                     {localWarningData} */}
@@ -117,8 +117,8 @@ export const AboutPage = () => {
             </section>
 
             {/** Education and Experience section */}
-            <section className="md:grid grid-cols-2 gap-4 mb-4 mx-6 md:mx-32">
-                <div className="bg-white  p-6 rounded-3xl mb-4">
+            <section className="md:grid grid-cols-2 gap-4 mb-4 mx-6 md:mx-32 ">
+                <div className="bg-white  p-6 rounded-3xl mb-4 animate-fade-right animate-once animate-duration-1000 animate-ease-linear">
                     
                     <h3 className="text-lg font-medium pb-4">EXPERIENCE</h3>
                     <div className="mb-6">
@@ -133,7 +133,7 @@ export const AboutPage = () => {
                         <h4 className="text-gray-400 font-medium text-sm">Dos Caminos</h4>
                     </div>
                 </div>
-                <div className="bg-white p-6 rounded-3xl mb-4">
+                <div className="bg-white p-6 rounded-3xl mb-4 animate-fade-left animate-once animate-duration-1000 animate-ease-linear">
                     <h3 className="text-lg font-medium pb-4">EDUCATION</h3>
                     <div className="mb-6">
                         <h3 className="text-gray-400">2023</h3>
@@ -157,7 +157,7 @@ export const AboutPage = () => {
             </section>
 
             {/** Contact info & more about me redirect */}
-            <section className="md:grid grid-cols-4 gap-4 mb-4 mx-6 md:mx-32">
+            <section className="md:grid grid-cols-4 gap-4 mb-4 mx-6 md:mx-32 animate-fade-up animate-once animate-duration-1000 animate-ease-linear">
                 <div className="bg-white  py-1 rounded-3xl mb-4">
                     <div className="bg-gray-50 flex justify-center m-8 p-4 rounded-3xl">
                         <div className="bg-white rounded-full p-6 mr-2">
