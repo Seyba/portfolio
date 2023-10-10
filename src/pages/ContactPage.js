@@ -72,7 +72,7 @@ export const ContactPage = () => {
                             </div>
                             <div>
                                 <h4 className="text-xl font-semibold text-gray-400">LOCATION</h4>
-                                <h5 className="text-sm font-semibold">55 River Rd, NY 13483</h5>
+                                <h5 className="text-sm font-semibold">Bronx, New York</h5>
                             </div>
                         </div>
                     </div>
