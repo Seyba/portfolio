@@ -57,7 +57,7 @@ export const ContactPage = () => {
                             </div>
                             <div className="">
                                 <h4 className="text-xl font-semibold text-gray-400">CONTACT ME</h4>
-                                <h5 className="text-sm font-semibold">+1 123-456-7890</h5>
+                                <h5 className="text-sm font-semibold">+1 646-479-9306</h5>
                             </div>
 
                         </div>
