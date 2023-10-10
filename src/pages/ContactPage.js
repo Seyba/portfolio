@@ -30,7 +30,7 @@ export const ContactPage = () => {
     }
     return(
         <div className="py-8">
-            <section className="md:grid grid-cols-3 gap-3 mb-4">
+            <section className="md:grid grid-cols-3 gap-3 mb-4 animate-fade-down animate-once animate-duration-1000 animate-ease-linear">
                 <div className="ml-4 md:ml-1 bg-gray-100  py-8 rounded-3xl mb-4">
                     <h3 className="text-left md:ml-32 mb-6">CONTACT INFO</h3>
                     <div className="md:ml-24 mb-16">

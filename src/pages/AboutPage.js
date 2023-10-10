@@ -91,8 +91,8 @@ export const AboutPage = () => {
                 
             </section> */}
             {/** summary section */}
-            <section className="md:grid grid-cols-3 gap-4 mb-4 mx-6 md:mx-32 animate-fade-down animate-once animate-duration-1000 animate-ease-linear">
-                <div className="bg-white  rounded-3xl mb-4">
+            <section className="md:grid grid-cols-3 gap-4 mb-4 mx-6 md:mx-32 ">
+                <div className="bg-white  rounded-3xl mb-4 animate-fade-right animate-once animate-duration-1000 animate-ease-linear">
                     {/* <h3>{forcast.title}</h3>
                     {localWarningData} */}
 
@@ -104,7 +104,7 @@ export const AboutPage = () => {
                     
                     
                 </div>
-                <div className="bg-white col-span-2 px-8 rounded-3xl mb-4">
+                <div className="bg-white col-span-2 px-8 rounded-3xl mb-4 animate-fade-left animate-once animate-duration-1000 animate-ease-linear">
                     <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2-2.png" alt="placeholder"/>
                     <h3 className="text-4xl font-semibold my-4">Mahamadou Tirera</h3>
                     <p className="text-sm text-gray-400 font-medium pb-8 m">
