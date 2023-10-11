@@ -80,7 +80,7 @@ export const ContactPage = () => {
                     <h3 className="text-left md:ml-32 mb-4 mt-8">SOCIAL INFO</h3>
                     <div className="py-8">
                         <div className="flex md:justify-center ">
-                            <div className=" bg-white p-6 rounded-full mr-4">
+                            <div className=" bg-white p-6 rounded-full mr-4 hover:bg-slate-50">
                                 <Link to="https://www.linkedin.com/in/mahamadou-tirera-950939aa/">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ export const ContactPage = () => {
                                     </svg>
                                 </Link>
                             </div>
-                            <div className="bg-white p-6 rounded-full mr-4">
+                            <div className="bg-white p-6 rounded-full mr-4 hover:bg-slate-50">
                                 <Link to="https://github.com/Seyba">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export const ContactPage = () => {
                                     </svg>
                                 </Link>
                             </div>
-                            <div className="bg-white p-6 rounded-full">
+                            <div className="bg-white p-6 rounded-full hover:bg-slate-50">
                                 <Link to="https://twitter.com/i/flow/login">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
