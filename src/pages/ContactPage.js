@@ -62,7 +62,7 @@ export const ContactPage = () => {
 
                         </div>
                     </div>
-                    <div className="md:ml-6 mb-16">
+                    <div className=" mb-16">
                         <div className="flex md:justify-center">
                             <div className="bg-white p-6 rounded-xl mr-6">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
